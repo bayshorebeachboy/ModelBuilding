@@ -28,12 +28,13 @@ while True:
     print(inches8)
     eights = float(eights)
     print(eights)
-    dec_ft = 8/(inches8 + eights)
+    print(inches8 + eights)
+    dec_ft = (inches8 + eights)/96
     print(dec_ft)  
     print(feet+dec_ft)
     print('Populate Station')
     # populate record function
-    print('X = ', feet+dec_ft)
+    print('X = ', round(feet+dec_ft, 2))
     print('Y = ', values[0])
     print('Z = ', values[1])      
 
